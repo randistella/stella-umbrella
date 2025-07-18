@@ -11,15 +11,16 @@
   <body>
     <!-- Sticky Nav -->
     <nav class="top-nav">
-      <div class="nav-content">
-        <a href="#" class="nav-logo">Stella Umbrella</a>
-        <div class="nav-links">
-          <a href="#" class="nav-link">Buy on Amazon</a>
-          <a href="#contact" class="nav-link">Contact</a>
-          <a href="#learn" class="nav-link">Learn More</a>
+        <div class="nav-content">
+          <a href="#" class="nav-logo">Stella Umbrella</a>
+          <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+          <div class="nav-links">
+            <a href="#" class="nav-link amazon">Buy on Amazon</a>
+            <a href="mailto:stellaumbrellallc@gmail.com" class="nav-link contact">Contact</a>
+            <!-- <a href="#learn" class="nav-link">Learn More</a> -->
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     <section class="hero">
       <h1>Wind making you nervous?</h1>
       <p class="tagline">Flightless canopy beach and patio umbrellas.</p>
@@ -47,4 +48,12 @@
     <!-- Footer -->
     <footer>&copy; 2025 Stella Umbrellas. All rights reserved.</footer>
   </body>
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+  
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('active');
+    });
+  </script>
 </html>
