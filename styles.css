@@ -35,6 +35,12 @@
     color: #333;
     margin-bottom: 10px;
   }
+ 
+  .tagline-2 {
+    font-size: .7 rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
   
   /* Button Sections */
   .button-section {
